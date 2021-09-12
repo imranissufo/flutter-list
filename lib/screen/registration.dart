@@ -136,15 +136,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 },
                 child:
                     Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                  Icon(
-                    Icons.person_add,
-                    //color: Colors.white,
-                  ),
                   Text(
                     "Submit",
-                    //style: TextStyle(color: Colors.white),
                   ),
-                ]), //const Text('Submit'),
+                ]),
               ),
             ),
           ],
