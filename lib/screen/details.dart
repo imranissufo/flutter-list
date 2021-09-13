@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:appfour/screen/registration.dart';
 import 'package:appfour/screen/user.dart';
 import 'package:flutter/material.dart';
