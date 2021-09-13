@@ -1,0 +1,239 @@
+
+Topic: Flutter Development Bootcamp with Dart
+Start Time : Sep 6, 2021 08:45 AM
+
+Meeting Recording:
+https://zoom.us/rec/share/QgzYWPhhb-jrFVRX0Cmsnkn057cKb9QzJvx2jlyw_7obw1uZaeXqLVaDWtD5BWoN.RL7L_xSwXjVSEm04
+
+
+Topic: Flutter Development Bootcamp with Dart
+Start Time : Sep 8, 2021 08:28 AM
+
+Meeting Recording:
+https://zoom.us/rec/share/KJs3-CGHQ6FvTmGr2oeQdvhV8lp3Kd76O6ImPHe9B7FRDNBZ3GUW1c4P9ao8hdTd.HPHbu0cfwImTe40y
+
+
+
+
+********************
+Dart
+********************
+
+dart run mayapp.dart
+
+To disable reporting of analytics, run:                                    
+
+dart --disable-analytics
+
+
+
+********************
+dadesktop
+********************
+
+
+https://dd4t.dadesktop.com/da/join/N75849
+
+
+
+
+http://www.json2yaml.com/
+
+
+
+Flutter
+Dart Code
+https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter
+
+
+Dart
+Dart Code
+https://marketplace.visualstudio.com/items?itemName=Dart-Code.dart-code
+
+
+Awesome Flutter Snippets
+https://marketplace.visualstudio.com/items?itemName=Nash.awesome-flutter-snippets
+
+Bracket Pair Colorizer 2
+https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2
+
+Dart Data Class Generator
+https://marketplace.visualstudio.com/items?itemName=BendixMa.dart-data-class-generator
+
+flutter-stylizer
+https://marketplace.visualstudio.com/items?itemName=gmlewis-vscode.flutter-stylizer
+
+Better Comments
+https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments
+
+Color Highlight
+https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight
+
+Json to Dart Model
+https://marketplace.visualstudio.com/items?itemName=hirantha.json-to-dart&ssr=false#overview
+
+Pubspec Assist
+https://marketplace.visualstudio.com/items?itemName=jeroen-meijer.pubspec-assist
+
+Error Lens
+https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens
+
+Flutter Tree
+https://marketplace.visualstudio.com/items?itemName=marcelovelasquez.flutter-tree
+
+
+Image preview
+https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-gutter-preview
+
+
+- flutter & dart installation
+where flutter dart
+
+- doctor
+flutter doctor
+
+- devices
+flutter devices
+
+- Configure de Android Studio
+flutter config --android-studio-dir="C:\Program Files\Android\Android Studio"
+
+- android-licenses
+flutter doctor --android-licenses
+
+- no-analytics
+flutter config --no-analytics
+
+- create flutter project
+flutter create myapp
+cd myapp
+
+- run flutter in chrome
+flutter run -d chrome
+
+- install libraries/dependecies similar to npm install
+flutter pub get
+
+- central repositories for libraries
+https://pub.dev/
+
+
+Run 'flutter create --platforms web .' to enable support for this platform?
+
+
+https://code.market/my-account/lost-password/?show-reset-form=true&action
+iNYXd2bm@eP4aqJ
+
+
+Run this command to add http dependency:
+
+With Dart:
+
+ $ dart pub add http
+ 
+ 
+With Flutter:
+
+ $ flutter pub add http
+
+This will add a line like this to your package's pubspec.yaml (and run an implicit dart pub get):
+
+dependencies:
+  http: ^0.13.3
+
+
+********************
+FAKER
+********************
+
+https://pub.dev/packages/faker/install
+
+flutter pub add faker
+
+
+********************
+SHARED PREFERENCE
+********************
+flutter pub add shared_preferences
+
+
+
+********************
+SQFLITE
+********************
+https://pub.dev/packages/sqflite/install
+
+flutter pub add sqflite
+
+dependencies:
+  sqflite: ^2.0.0+4
+  
+import 'package:sqflite/sqflite.dart';
+
+
+
+
+********************
+battery_plus
+********************
+flutter pub add battery_plus
+dependencies:
+  battery_plus: ^1.1.1
+  
+import 'package:battery_plus/battery_plus.dart';
+
+
+
+********************
+connectivity_plus
+********************
+
+flutter pub add connectivity_plus
+dependencies:
+  connectivity_plus: ^1.1.0
+import 'package:connectivity_plus/connectivity_plus.dart';
+
+********************
+GIT
+********************
+https://github.com/imranissufo/flutter-list
+
+https://gitlab.com/flutter197/countries
+https://gitlab.com/flutter197/countries.git
+
+cd existing_repo
+git remote add origin2 https://gitlab.com/flutter197/countries.git
+//git branch -M main
+git push -uf origin2 master
+
+git remote add origin https://gitlab.com/flutter197/countries.git
+
+git remote add origin https://github.com/imranissufo/flutter-countries.git
+
+git remote remove origin
+
+git remote -v
+
+git push --set-upstream origin master
+
+//remove from the stage
+git restore --staged .
+
+//remove commit
+git reset --soft HEAD~1
+
+
+
+How to enable Samsung Galaxy S5 developer options
+Go to the settings menu on your GS5.
+Scroll down to the "System section and tap "About Device."
+Now scroll down to "Build number."
+Tap the "Build number" section seven times. ...
+Now back out to the main settings menu, and you'll see "Developer options" listed.
+
+
+Set up your Android device
+Enable Developer options and USB debugging on your device. ...
+Windows-only: Install the Google USB Driver.
+Using a USB cable, plug your phone into your computer. ...
+In the terminal, run the flutter devices command to verify that Flutter recognizes your connected Android device.

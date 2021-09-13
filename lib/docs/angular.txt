@@ -1,0 +1,341 @@
+Topic: Angular 12
+Start Time : Sep 3, 2021 08:36 AM
+
+Meeting Recording:
+https://zoom.us/rec/share/iMesOZztWF2M_rL2N8_O0aV_ZEjZRbNXSLoy1ajv4yezvGxD5IDKvi3aJL5bc1Me.nbyrOTmg5vDpBYD5
+
+
+Topic: Angular 12
+Start Time : Sep 2, 2021 08:40 AM
+
+Meeting Recording:
+https://zoom.us/rec/share/StSUsMzvR7dltqcXfb40rS3gan3Q__bHiTT7zGjnZKuF1rjt7xEp78JP6Uz0AA0T.h4g24dHt0KgTIBya
+
+
+Topic: Angular 12
+Start Time : Sep 1, 2021 08:39 AM
+
+Meeting Recording:
+https://zoom.us/rec/share/hPn16XoKPjPlxoeRHvysj9RxgRRWRonlbXyJ_Gvn51HeAKavDy1swCCWpUmcvu1M.6ukeqKLFKZ74J6-H
+
+
+Topic: Angular 12
+Start Time : Aug 31, 2021 08:29 AM
+
+Meeting Recording:
+https://zoom.us/rec/share/JAjmP4zq_KDp0BGNPfxok57XOCexDR7Xrm6TzsT8nBt5p9oUGS8jOejrk_oFmsjh.FiHNYju7fMJhRoeX
+
+
+Topic: Angular 12
+Start Time : Aug 30, 2021 08:33 AM
+
+Meeting Recording:
+https://zoom.us/rec/share/nbAqFGfij5eodBGlq8cmz5kiJ9X8rS_GFWblwPjDdDSJ7Vzv2Cqq2xRkBKEoiJjv.bBryvBhF52o6raJn
+
+
+
+LinkedIn: https://www.linkedin.com/in/ayossef/
+Email: ahmed.yossef@nobleprog.ae
+Whatsapp: +971581059211
+
+
+git config --global user.email "imran.issufo@gmail.com"
+git config --global user.name "iissufo"
+
+git config --global core.autocrlf false
+
+npm install --legacy-peer-deps
+npm install --legacy-peer-deps
+
+
+ng new my-app
+cd my-app
+ng serve --open
+ng s --open
+
+
+ng generate component components/mycomp
+ng g c components/mycomp
+ng g c components/profile
+
+ng g s services/profile
+
+ng build
+
+ng add @angular/material
+
+
+name
+email
+phoneNumber
+image
+
+******************
+format json
+******************
+https://jsonlint.com/
+
+
+
+******************
+faker
+******************
+
+https://www.npmjs.com/package/faker
+
+
+******************
+PWA
+******************
+https://web.dev/progressive-web-apps/
+https://www.npmjs.com/package/@angular/pwa
+
+
+https://github.com/PatrickJS/awesome-angular#third-party-components
+
+https://demos.creative-tim.com/material-dashboard-pro-angular2/#/forms/wizard
+https://material.angular.io/components/categories
+https://getbootstrap.com/docs/5.1/forms/form-control/
+https://getbootstrap.com/docs/5.1/components/accordion/
+
+https://getbootstrap.com/docs/5.0/forms/form-control/
+
+
+
+******************
+NPM
+******************
+https://www.npmjs.com/
+
+
+
+******************
+JSON Server
+******************
+
+https://www.npmjs.com/package/json-server
+Install JSON Server Global
+
+npm install -g json-server
+
+Install JSON Server Local
+
+npm install json-server
+
+
+Create a db.json file with some data
+
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
+
+Start JSON Server Global
+
+json-server --watch db.json
+
+Start JSON Server Local
+
+node package executor 
+npx json-server --watch db.json
+
+
+Now if you go to http://localhost:3000/posts/1, you'll get
+
+{ "id": 1, "title": "json-server", "author": "typicode" }
+
+
+Alternative port
+
+You can start JSON Server on other ports with the --port flag:
+
+$ json-server --watch db.json --port 3004
+
+
+******************
+DOCS
+******************
+
+
+https://docs.google.com/spreadsheets/d/16U6JA0OfcM8qecTBG4-g1MbR06H_bJRWbMAkCUGwnjs/edit#gid=0
+
+
+
+
+******************
+Angular bootstrap
+******************
+
+https://dev.to/rodrigokamada/adding-the-bootstrap-css-framework-to-an-angular-application-2k40
+Getting started
+Create the Angular application
+
+1. Let's create the application with the Angular base structure using the @angular/cli with the route file and the SCSS style format.
+ng new angular-bootstrap
+? Would you like to add Angular routing? Yes
+? Which stylesheet format would you like to use? SCSS 
+
+2. Install the bootstrap and bootstrap-icons libraries.
+npm install bootstrap bootstrap-icons
+
+3. Configure the bootstrap and bootstrap-icons libraries. Change the angular.json file and add the bootstrap.scss, bootstrap-icons.css and bootstrap.bundle.min.js files as below.
+"styles": [
+  "node_modules/bootstrap/scss/bootstrap.scss",
+  "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+  "src/styles.scss"
+],
+"scripts": [
+  "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+]
+
+4. Install the @ng-bootstrap/ng-bootstrap library.
+npm install @ng-bootstrap/ng-bootstrap@next
+
+
+5. Import the NgbModule module. Change the app.module.ts file and add the lines as below.
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+imports: [
+  BrowserModule,
+  NgbModule,
+  AppRoutingModule,
+],
+
+6. Remove the contents of the AppComponent class from the src/app/app.component.ts file. Import the NgbModal service and create the open method as below.
+import { Component } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
+})
+export class AppComponent {
+
+  constructor(private modalService: NgbModal) {
+  }
+
+  public open(modal: any): void {
+    this.modalService.open(modal);
+  }
+
+}
+
+
+7. Remove the contents of the src/app/app.component.html file. Add some components as below.
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <h1>Angular Bootstrap</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid py-3">
+  <div class="row my-3">
+    <div class="col">
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+  </div>
+  <div class="row my-3">
+    <div class="col">
+      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+      <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+  </div>
+  <div class="row my-3">
+    <div class="col">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+      </div>
+    </div>
+  </div>
+  <div class="row my-3">
+    <div class="col">
+      <button class="btn btn-sm btn-outline-primary" (click)="open(demoModal)">Launch demo modal</button>
+    </div>
+  </div>
+</div>
+
+<ng-template #demoModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="dateOfBirth">Date of birth</label>
+        <div class="input-group">
+          <input id="dateOfBirth" name="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" ngbDatepicker #dp="ngbDatepicker">
+          <button type="button" class="btn btn-outline-secondary bi bi-calendar" (click)="dp.toggle()"></button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+  </div>
+</ng-template>
+
+8. Run the application with the command below.
+npm start
+
+> angular-bootstrap@1.0.0 start
+> ng serve
+
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names         |      Size
+vendor.js           | vendor        |   3.38 MB
+styles.css          | styles        | 255.86 kB
+polyfills.js        | polyfills     | 128.56 kB
+scripts.js          | scripts       |  76.94 kB
+main.js             | main          |  22.81 kB
+runtime.js          | runtime       |   6.59 kB
+
+                    | Initial Total |   3.86 MB
+
+Build at: 2021-06-27T21:28:22.756Z - Hash: 122b9fa4d57b962e7bcc - Time: 21933ms
+
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+
+
+✔ Compiled successfully.
