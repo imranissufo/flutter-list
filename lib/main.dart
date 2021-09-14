@@ -8,7 +8,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  var faker = new Faker();
+  final faker = new Faker();
 
   @override
   Widget build(BuildContext context) {

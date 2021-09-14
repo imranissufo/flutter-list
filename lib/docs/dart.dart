@@ -5,6 +5,26 @@ void main() {
   //forLoops();
   //whileAndIfAndContinue();
   //readInput();
+
+  User u1 = new User("imran");
+  u1.id = 1;
+  u1.printUserData();
+
+  User u2 = new User.withEmail("imran", "email");
+  u2.id = 2;
+  u2.printUserData();
+
+  User u3 = new User.withEmailAndAge("imran", "email", 33);
+  u3.id = 3;
+  u3.printUserData();
+
+  print(User.MAX_AGE);
+}
+
+//simplified method for one instruction methods
+void simpleMethod1() => print('object');
+void simpleMethod2() {
+  print('object');
 }
 
 void readInput() {
@@ -96,26 +116,6 @@ void variablesAndPrinting() {
   print("Age $age");
 }
 
-
-******************************************************
-
-
-void main(List<String> args) {
-  User u1 = new User("imran");
-  u1.id = 1;
-  u1.printUserData();
-
-  User u2 = new User.withEmail("imran", "email");
-  u2.id = 2;
-  u2.printUserData();
-
-  User u3 = new User.withEmailAndAge("imran", "email", 33);
-  u3.id = 3;
-  u3.printUserData();
-
-  print(User.MAX_AGE);
-}
-
 class User {
   static var MAX_AGE = 100;
 
@@ -135,6 +135,10 @@ class User {
   User(this.name);
   User.withEmail(this.name, this.email);
   User.withEmailAndAge(this.name, this.email, this.age);
+
+  //User({required this.name, this.age}); //Named arguments constructor
+  // var u1 = User(name:'Sheikh', age:31)
+  // var u2 = User(age:41, name:'Mufti')
 
   void printUserData() {
     print("$id User $name is $age years old and you can contact him on $email");
