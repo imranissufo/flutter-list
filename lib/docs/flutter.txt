@@ -206,6 +206,8 @@ git remote add origin2 https://gitlab.com/flutter197/countries.git
 //git branch -M main
 git push -uf origin2 master
 
+ git push -u origin --all
+ 
 git remote add origin https://gitlab.com/flutter197/countries.git
 
 git remote add origin https://github.com/imranissufo/flutter-countries.git
